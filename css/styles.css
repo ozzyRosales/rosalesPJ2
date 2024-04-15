@@ -7,13 +7,14 @@
 
 html {
     font-family: "Waiting for the Sunrise";
-    font-style: normal;
-    background-color: #87CEEB;
+    font-style: bold;
+    background-image: linear-gradient(rgb(0, 174, 255), rgba(255, 230, 37, 0.791));
 }
 
 body {
     height: 712px;
     width: 1440px;
+    min-height: 100vh;
 }
 
 section {
@@ -27,47 +28,42 @@ section {
     padding-top: 15%;
 }
 
-.pos2 {
-    height: 912px;
-    width: 2220px;
-    padding-top: 82%;
-    padding-left: 40%;
-}
-
-
-
 h3 {
-    color: white;
+    
     font-size: 48px;
     font-weight: 100;
     line-height: 57px;
 }
-
-h4 {
-    color: white;
-    font-size: 48px;
-    font-weight: 100;
-    line-height: 57px;
-}
-
 
 a {
     font-size: 48px;
     font-weight: 100;
     line-height: 57px;
     text-decoration: none;
-    color: brown;
+    color: rgba(142, 43, 0, 0.785);
 }
 
-h5 {
-    font-size: 20px;
-    text-align: center;
+.fadeIn {
+    position: absolute;
+    top: 317px;
+    left: 495px;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
-p {
-    font-size: 30px;
+@keyframes neon-animation {
+    0%, 100% {
+        color: #FFD700; 
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+    50% {
+        color: #FEB303; 
+        text-shadow: none;
+    }
 }
-
 #fadeIn {
     animation-name: fadeIn;
     animation-delay: 0s;
@@ -87,479 +83,21 @@ p {
     }
 }
 
-#fadeIn1 {
-    animation-name: fadeIn;
-    animation-delay: 0s;
-    animation-direction: forwards;
-    animation-duration: 2s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-}
-
-@keyframes fadeIn1 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-#fadeIn2 {
-    animation-name: fadeIn;
-    animation-delay: 0s;
-    animation-direction: forwards;
-    animation-duration: 2s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-}
-
-@keyframes fadeIn2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#fadeIn3 {
-    animation-name: fadeIn;
-    animation-delay: 0s;
-    animation-direction: forwards;
-    animation-duration: 2s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-}
-
-@keyframes fadeIn3 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
 /* Pg 1 */
-
-.mylife{
-    color: orange;
-}
-
-
-
-
-#floats {
-    animation-name: floats;
-    animation-delay: 1.2s;
-    animation-direction: forwards;
-    animation-duration: 3s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-}
-
-@keyframes floats {
-    from {
-        position: relative;
-        top: 0px;
-    }
-    to {
-        position: relative;
-        top: -15px;
-        font-size: 48px;
-    }
-}
-
-/* Pg 2 */
-.fadeIn {
-    position: absolute;
-    top: 317px;
-    left: 495px;
-    animation-name: look;
-    animation-duration: 5s;
-    animation-delay: 6s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0%{ opacity: 0;}
-    100% { opacity: 1; } 
-}
-#meetFirst {
-    color: #D1C9B6;
-    opacity: 0;
-    animation-name: meetFirst;
-    animation-delay: 2s;
-    animation-direction: forwards;
-    animation-duration: 3s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-  
-}
-
-@keyframes meetFirst {
-    from {
-        margin-left: -150px;
-    }
-    to {
-        margin-left: 0px;
-        opacity: 100%;
-    }
-}
-@keyframes neon-animation {
-    0%, 100% {
-        color: #FFD700; 
-        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
-    }
-    50% {
-        color: #FEB303; 
-        text-shadow: none;
-    }
-}
-
-/* Pg 3 */
-#feetF {
-    color: #D1C9B6;
-    position: absolute;
-    top: 317px;
-    left: 677px;
-    animation-name: feetLetters;
-    animation-duration: 1s;
-    animation-delay: 500ms;
-    animation-fill-mode: forwards;
-}
-
-#feetE1 {
-    color: #D1C9B6;
-    position: absolute;
-    top: 317px;
-    left: 696px;
-    animation-name: feetLetters;
-    animation-duration: 1s;
-    animation-delay: 1000ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#feetE2 {
-    color: #D1C9B6;
-    position: absolute;
-    top: 317px;
-    left: 713px;
-    animation-name: feetLetters;
-    animation-duration: 1s;
-    animation-delay: 1500ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-}
-
-#feetT {
-    color: #D1C9B6;
-    position: absolute;
-    top: 317px;
-    left: 730px;
-    animation-name: feetLetters;
-    animation-duration: 1s;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes feetLetters {
-    0% {
-        opacity: 0;
-        font-size: 88px;
-    }
-    100% {
-        color: #776565;
-        opacity: 1;
-        font-size: 48px;
-    }
-}
-
-
-
-#meetSecond {
-    position: absolute;
-    top: 374px;
-    color: #D1C9B6;
-    opacity: 0;
-    animation-name: meetSecond;
-    animation-delay: 2s;
-    animation-direction: forwards;
-    animation-duration: 3s;
-    animation-fill-mode:forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-}
-
-@keyframes meetSecond {
-    from {
-        margin-left: 368px;
-    }
-    to {
-        margin-left: 218px;
-        opacity: 1;
-        color: rgb(92, 134, 138);
-    }
-}
-
-/* Pg 4 */
-.page4 {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-}
-
-.circle {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: circleText 10s linear infinite;
-}
-
-.text span{
-    position: absolute;
-    left: 50%;
-    font-size: 56px;
-    transform-origin: 0 150px;
-    animation: circleTextOpacity 2s linear 1;
-}
-
-#arrow {
-    position: absolute;
-    top: 47%;
-}
-
-@keyframes circleText {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes circleTextOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Pg 5 */
-#down {
-    position: absolute;
-    top: 317px;
-    left: 560px;
-    animation: down;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-#asItMust {
-    position: absolute;
-    top: 317px;
-    left: 655px;
-}
-
-#up {
-    color: #776565;
-    position: absolute;
-    top: 317px;
-    left: 820px;
-    animation: up;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-}
-
-@keyframes down {
-    0% {
-    }
-    100% {
-        top: 400px;
-    }
-}
-
-@keyframes up {
-    0% {
-        color: #776565;
-    }
-    100% {
-        top: 250px;
-    }
-}
-
-/* Pg 6 */
-
-.info6 {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    color: white;
-    animation: increaseSize 9s ease infinite alternate;
-    -webkit-animation: increaseSize 9s ease infinite alternate;
-}
-
-#gradient {
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
-    animation: neon-animation 2.5s infinite;
-    -webkit-animation: neon-animation 2.5s infinite;
-}
-
-.laughterPositionL {
-    position: absolute;
-    top: 317px;
-    left: 673px;
-}
-
-.laughterPositionA {
-    position: absolute;
-    top: 317px;
-    left: 683px;
-}
-
-.laughterPositionU {
-    position: absolute;
-    top: 317px;
-    left: 707px;
-}
-
-.laughterPositionG {
-    position: absolute;
-    top: 317px;
-    left: 725px;
-}
-
-.laughterPositionH {
-    position: absolute;
-    top: 317px;
-    left: 740px;
-}
-
-.laughterPositionT {
-    position: absolute;
-    top: 317px;
-    left: 759px;
-}
-
-.laughterPositionE {
-    position: absolute;
-    top: 317px;
-    left: 774px;
-}
-
-.laughterPositionR {
-    position: absolute;
-    top: 317px;
-    left: 791px;
-}
-
-/* Pg 7 */
-.onTheBeachPosition {
-    position: absolute;
-    top: 375px;
-    left: 501px;
-}
-
-.myGirls {
-    position: absolute;
-    top: 319px;
-    left: 530px;
-    animation-name: myGirls;
-    animation-duration: 5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-    color: #776565;
-}
-
-.myGirls:hover {
-    animation-play-state: running;
-}
-
-@keyframes myGirls {
-    from {
-        color: white;
-    }
-    to {
-        color: brown;
-    }
-}
-
-.pg7SS{
-    position: absolute;
-    top: 317px;
-    left: 820px;
-    animation-name: pg7SS;
-    animation-duration: 5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-
-}
-
-
-/* Pg 8 */
-.page8 {
+.p1 {
     place-items: center;
     min-height: 100vh;
     text-align: center;
-    animation-name: underwater;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+    color:linear-gradient(rgb(0, 174, 255), rgba(255, 230, 37, 0.791));
 }
 
-@keyframes underwater {
-    0% {
-        background-color: rgb(92, 134, 138);
-        opacity: 0;
-    }
-    100% {
-        background-color: rgb(92, 134, 138);
-        opacity: 1;
-    }
-}
 
-#happy {
+#myLife{
     position: absolute;
     top: -50px;
     left: 675px;
@@ -568,11 +106,11 @@ p {
     animation-fill-mode: forwards;
 }
 
-#happy a {
-    color: #D1C9B6;
+#myLife a {
+    color: #ffffff;
 }
 
-#ever {
+#myLifetwo {
     position: absolute;
     top: -50px;
     left: 675px;
@@ -582,11 +120,11 @@ p {
     animation-fill-mode: forwards;
 }
 
-#ever a {
-    color: #D1C9B6;
+#myLifetwo a {
+    color: #ffffff;
 }
 
-#after {
+#myLifethree{
     position: absolute;
     top: -50px;
     left: 675px;
@@ -596,11 +134,11 @@ p {
     animation-fill-mode: forwards;
 }
 
-#after a {
-    color: #D1C9B6;
+#myLifethree a {
+    color: #ffffff;
 }
 
-#after a:hover {
+#myLifethree a:hover {
     color: #ffc130;
     transition-duration: 1s;
 }
@@ -634,6 +172,265 @@ p {
         opacity: 1;
     }
 }
+
+
+.mylife{
+    color: orange;
+}
+
+/* Pg 2 */
+
+.page2 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    0%{ opacity: 0;}
+    100% { opacity: 1; } 
+}
+
+
+/* Pg 3 */
+
+.page3 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Pg 4 */
+.page4 {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff171;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: circleText 10s linear infinite;
+    color: #ffce3b;
+}
+
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size: 56px;
+    transform-origin: 0 150px;
+    animation: circleTextOpacity 2s linear 1;
+}
+
+#arrow {
+    position: absolute;
+    top: 47%;
+} 
+
+@keyframes circleText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circleTextOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Pg 5 */
+
+.page5 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-name: ML;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+
+#down {
+    position: absolute;
+    top: 317px;
+    left: 560px;
+    animation: down;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#inthe{
+    position: absolute;
+    top: 317px;
+    left: 655px;
+}
+
+#sunshine {
+    color: #776565;
+    position: absolute;
+    top: 317px;
+    left: 820px;
+    animation: up;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes down {
+    0% {
+    }
+    100% {
+        top: 400px;
+    }
+}
+
+@keyframes up {
+    0% {
+        color: #776565;
+    }
+    100% {
+        top: 250px;
+    }
+}
+
+/* Pg 6 */
+
+.page6 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.p6 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    animation: increaseSize 9s ease infinite alternate;
+    -webkit-animation: increaseSize 9s ease infinite alternate;
+}
+
+#gradient {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    animation: neon-animation 2.5s infinite;
+    -webkit-animation: neon-animation 2.5s infinite;
+}
+
+/* Pg 7 */
+.page7 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.brown {
+    position: absolute;
+    top: 319px;
+    left: 530px;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    color: #776565;
+}
+
+.brown {
+    animation-play-state: running;
+}
+/* Pg 1 */
+
+.pg7Sunshine{
+    position: absolute;
+    top: 317px;
+    left: 820px;
+    animation-name: pg7SS;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+}
+
+
+/* Pg 8 */
+.page8 {
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation-name: underwater;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes underwater {
+    0% {
+        background-image: linear-gradient(rgba(129, 83, 255, 0.442), rgba(0, 0, 0, 0.791));
+        opacity: 0;
+    }
+    100% {
+        background-image: linear-gradient(rgba(129, 83, 255, 0.442), rgba(0, 0, 0, 0.791));
+        opacity: 1;
+    }
+}
+
 
 #centerText {
     text-align: center;
